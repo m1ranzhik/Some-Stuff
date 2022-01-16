@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Champions Cup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
+p.double {border-style: double;}
 body {
    background-image: url('foothd.jpg');
   background-repeat: no-repeat;
@@ -22,12 +33,105 @@ p {
   text-align: center;
   color: white;
 }
+td {
+text-align: center;
+color: white;
+}
+th {
+text-align: center;
+color: white;
+}
+.groups  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+     grid-column-gap: 10px;
+   grid-row-gap: 1em;
+}
+/*-- testimonial Section CSS --*/
+#testimonial {
+    padding: 30px 0px 20px;
+    color: #fff;
+    background-color: #673AB7;
+}
+#testimonial h2 {
+    font-style: italic;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+#testimonial .client-img {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    margin: 0px auto;
+    border-radius: 100%;
+    position: absolute;
+    left: 0px;
+}
+#testimonial .carousel-content {
+    padding: 20px 0px 20px 100px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+#testimonial h3 {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 30px;
+    font-style: italic;
+    text-align: right;
+}
+#testimonial p {
+    font-size: 15px;
+}
+#testimonial .client-img img {
+    width: 100%;
+}
+#testimonial .carousel-control-prev,
+#testimonial .carousel-control-next {
+    font-size: 36px;
+}
+
+@media (max-width: 576px) {
+#testimonial .carousel-content {
+    padding: 20px 0px 20px 0px;
+    width: 100%;
+}
+#testimonial .client-img {
+    margin: 20px auto;
+    position: static;
+}
+#testimonial h3, #testimonial p {
+    text-align: center;
+}
+}
+
 </style>
 </head>
 <body>
-<h1 style="background-color:MediumSeaGreen;"> UEFA Champions League </h1>
-  <p>Group A </p>
-  <table align="center" style="color:white;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">UCL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> 
+        <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item"> 
+        <a class="nav-link" href="">Links</a>
+        </li>
+        <li class="nav-item"> 
+        <a class="nav-link" href="">Support</a>
+        </li>
+    </ul>
+    </div>
+</nav>
+<div class="groups"> 
+  <div  class="a"> <p>Group A </p>
+  <table class="double" align="center" style="color:white;">
     <tr>
       <th> Place </th>
     <th> Team </th>
@@ -53,7 +157,8 @@ p {
       <td> Club Brugge </td>
       <td> 4 </td>
     </tr>
-    </table>
+    </table></div>
+    <div class="b">
   <p>Group B </p>
   <table align="center" style="color:white;">
     <tr>
@@ -81,7 +186,8 @@ p {
       <td> Milan </td>
       <td> 4 </td>
     </tr>
-    </table>
+    </table> </div>
+    <div class="c">
   <p>Group C </p>
   <table align="center" style="color:white;">
     <tr>
@@ -109,7 +215,8 @@ p {
       <td> Besiktas </td>
       <td> 0 </td>
     </tr>
-    </table>
+    </table></div>
+    <div class="d">
   <p>Group D </p>
   <table align="center" style="color:white;">
     <tr>
@@ -137,7 +244,8 @@ p {
       <td> Shakhtar Donetsk </td>
       <td> 2 </td>
     </tr>
-    </table>
+    </table></div>
+    <div class="e">
   <p>Group E </p>
   <table align="center" style="color:white;">
     <tr>
@@ -165,7 +273,9 @@ p {
       <td> Dynamo Kyiv </td>
       <td> 1 </td>
     </tr>
-    </table>
+    </table></div>
+
+    <div class="f">
   <p>Group F </p>
   <table align="center" style="color:white;">
     <tr>
@@ -193,7 +303,8 @@ p {
       <td> BSC Young Boys </td>
       <td> 5 </td>
     </tr>
-    </table>
+    </table></div>
+  <div class="g">
   <p>Group G </p>
   <table align="center" style="color:white;">
     <tr>
@@ -221,7 +332,8 @@ p {
       <td> Wolfsburg </td>
       <td> 5 </td>
     </tr>
-    </table>
+    </table></div>
+    <div class="h">
   <p>Group H </p>
   <table align="center" style="color:white;">
     <tr>
@@ -249,8 +361,8 @@ p {
       <td> Malmo </td>
       <td> 1 </td>
     </tr>
-    </table>
-  <h4> 1/8 final pairs</h4>
+    </table></div></div>
+  <h4 style="color:white;"> 1/8 final pairs</h4>
   <ul style="color:white;">
     <li> Red Bull Salzburg - Bayern Munich </li>
     <li> Sporting - Manchester City </li>
@@ -264,11 +376,73 @@ p {
   <h5> Pick one of the teams above that has the best chance of winning the Champions League trophy this season </h5>
   <form action="collecting data">
     <label for="tname"> Team </label><br>
-    <input type="text" id="tname"<br>
+    <input type="text" id="tname"><br>
     <input type="submit" value="Submit">
   </form>
 <h3>
   <a href="https://www.sports.ru/ucl/table/">There is full table of UCL of 2021/22 season </a>
   </h3>
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Slide Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                            <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="carousel-content">
+                                    <div class="client-img"><img src="images/user-img-1.jpg" alt="Testimonial Slider" /></div>
+                                    <p><i>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</i></p>
+                                    <h3><span>-</span> Gourav Kumar <span>-</span></h3>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    <div class="client-img"><img src="images/user-img-2.jpg" alt="Testimonial Slider" /></div>
+                                    <p><i>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i></p>
+                                    <h3><span>-</span> Mukesh Kumar <span>-</span></h3>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="carousel-content">
+                                    <div class="client-img"><img src="images/user-img-3.jpg" alt="Testimonial Slider" /></div>
+                                    <p><i>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form. There are many variations of passages of Lorem Ipsum available. Lorem Ipsum is simply dummy text of the printing and typesetting industry</i></p>
+                                    <h3><span>-</span> Rajnish Kumar <span>-</span></h3>
+                                </div>
+                            </div>
+                            <!-- Slider pre and next arrow -->
+                            <a class="carousel-control-prev text-white" href="#testimonialCarousel" role="button" data-slide="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a class="carousel-control-next text-white" href="#testimonialCarousel" role="button" data-slide="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End testimonials Section -->
+
+
+
   </body>
 </html>
